@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */; };
+		912A3B4322DD01DA00CE9C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4122DD01DA00CE9C00 /* Main.storyboard */; };
+		912A3B4522DD01DB00CE9C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4422DD01DB00CE9C00 /* Assets.xcassets */; };
+		912A3B4822DD01DB00CE9C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4622DD01DB00CE9C00 /* LaunchScreen.storyboard */; };
+		912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5222DD02D600CE9C00 /* ExchangeViewController.swift */; };
+		912A3B5522DD02E900CE9C00 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5422DD02E900CE9C00 /* TranslateViewController.swift */; };
+		912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5622DD030400CE9C00 /* WeatherViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		912A3B3A22DD01DA00CE9C00 /* Travelnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		912A3B4222DD01DA00CE9C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		912A3B4422DD01DB00CE9C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		912A3B4722DD01DB00CE9C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		912A3B4922DD01DB00CE9C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912A3B5222DD02D600CE9C00 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		912A3B5422DD02E900CE9C00 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		912A3B5622DD030400CE9C00 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		912A3B3722DD01DA00CE9C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912A3B3122DD01DA00CE9C00 = {
+			isa = PBXGroup;
+			children = (
+				912A3B3C22DD01DA00CE9C00 /* Travelnow */,
+				912A3B3B22DD01DA00CE9C00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		912A3B3B22DD01DA00CE9C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B3A22DD01DA00CE9C00 /* Travelnow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		912A3B3C22DD01DA00CE9C00 /* Travelnow */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B5122DD020500CE9C00 /* Method */,
+				912A3B5022DD01FB00CE9C00 /* View */,
+				912A3B4F22DD01EA00CE9C00 /* Controller */,
+				912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */,
+				912A3B4422DD01DB00CE9C00 /* Assets.xcassets */,
+				912A3B4622DD01DB00CE9C00 /* LaunchScreen.storyboard */,
+				912A3B4922DD01DB00CE9C00 /* Info.plist */,
+			);
+			path = Travelnow;
+			sourceTree = "<group>";
+		};
+		912A3B4F22DD01EA00CE9C00 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B5222DD02D600CE9C00 /* ExchangeViewController.swift */,
+				912A3B5422DD02E900CE9C00 /* TranslateViewController.swift */,
+				912A3B5622DD030400CE9C00 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		912A3B5022DD01FB00CE9C00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B4122DD01DA00CE9C00 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		912A3B5122DD020500CE9C00 /* Method */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Method;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		912A3B3922DD01DA00CE9C00 /* Travelnow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912A3B4C22DD01DB00CE9C00 /* Build configuration list for PBXNativeTarget "Travelnow" */;
+			buildPhases = (
+				912A3B3622DD01DA00CE9C00 /* Sources */,
+				912A3B3722DD01DA00CE9C00 /* Frameworks */,
+				912A3B3822DD01DA00CE9C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Travelnow;
+			productName = Travelnow;
+			productReference = 912A3B3A22DD01DA00CE9C00 /* Travelnow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		912A3B3222DD01DA00CE9C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Soa;
+				TargetAttributes = {
+					912A3B3922DD01DA00CE9C00 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 912A3B3522DD01DA00CE9C00 /* Build configuration list for PBXProject "Travelnow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 912A3B3122DD01DA00CE9C00;
+			productRefGroup = 912A3B3B22DD01DA00CE9C00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				912A3B3922DD01DA00CE9C00 /* Travelnow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		912A3B3822DD01DA00CE9C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912A3B4822DD01DB00CE9C00 /* LaunchScreen.storyboard in Resources */,
+				912A3B4522DD01DB00CE9C00 /* Assets.xcassets in Resources */,
+				912A3B4322DD01DA00CE9C00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		912A3B3622DD01DA00CE9C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */,
+				912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */,
+				912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */,
+				912A3B5522DD02E900CE9C00 /* TranslateViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		912A3B4122DD01DA00CE9C00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912A3B4222DD01DA00CE9C00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		912A3B4622DD01DB00CE9C00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912A3B4722DD01DB00CE9C00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		912A3B4A22DD01DB00CE9C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		912A3B4B22DD01DB00CE9C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		912A3B4D22DD01DB00CE9C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPYXZN2GGQ;
+				INFOPLIST_FILE = Travelnow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soa.Travelnow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		912A3B4E22DD01DB00CE9C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPYXZN2GGQ;
+				INFOPLIST_FILE = Travelnow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soa.Travelnow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		912A3B3522DD01DA00CE9C00 /* Build configuration list for PBXProject "Travelnow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912A3B4A22DD01DB00CE9C00 /* Debug */,
+				912A3B4B22DD01DB00CE9C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912A3B4C22DD01DB00CE9C00 /* Build configuration list for PBXNativeTarget "Travelnow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912A3B4D22DD01DB00CE9C00 /* Debug */,
+				912A3B4E22DD01DB00CE9C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 912A3B3222DD01DA00CE9C00 /* Project object */;
+}
