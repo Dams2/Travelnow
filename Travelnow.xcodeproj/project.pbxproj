@@ -14,6 +14,8 @@
 		912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5222DD02D600CE9C00 /* ExchangeViewController.swift */; };
 		912A3B5522DD02E900CE9C00 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5422DD02E900CE9C00 /* TranslateViewController.swift */; };
 		912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5622DD030400CE9C00 /* WeatherViewController.swift */; };
+		912A3B7F22DF1B3500CE9C00 /* FixerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5922DE109200CE9C00 /* FixerApi.swift */; };
+		912A3B8622DF4BA600CE9C00 /* CountryWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B8522DF4BA600CE9C00 /* CountryWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		912A3B5222DD02D600CE9C00 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
 		912A3B5422DD02E900CE9C00 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		912A3B5622DD030400CE9C00 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		912A3B5922DE109200CE9C00 /* FixerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixerApi.swift; sourceTree = "<group>"; };
+		912A3B8522DF4BA600CE9C00 /* CountryWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,8 @@
 		912A3B3C22DD01DA00CE9C00 /* Travelnow */ = {
 			isa = PBXGroup;
 			children = (
-				912A3B5122DD020500CE9C00 /* Method */,
+				912A3B5822DE0F6000CE9C00 /* Network API */,
+				912A3B5122DD020500CE9C00 /* Model */,
 				912A3B5022DD01FB00CE9C00 /* View */,
 				912A3B4F22DD01EA00CE9C00 /* Controller */,
 				912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */,
@@ -87,11 +92,44 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		912A3B5122DD020500CE9C00 /* Method */ = {
+		912A3B5122DD020500CE9C00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B8322DF4B3400CE9C00 /* Exchange */,
+				912A3B8422DF4B5C00CE9C00 /* Translate */,
+				912A3B8222DF4B2400CE9C00 /* Weather */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912A3B5822DE0F6000CE9C00 /* Network API */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B5922DE109200CE9C00 /* FixerApi.swift */,
+			);
+			path = "Network API";
+			sourceTree = "<group>";
+		};
+		912A3B8222DF4B2400CE9C00 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				912A3B8522DF4BA600CE9C00 /* CountryWeather.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		912A3B8322DF4B3400CE9C00 /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Method;
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		912A3B8422DF4B5C00CE9C00 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912A3B7F22DF1B3500CE9C00 /* FixerApi.swift in Sources */,
 				912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */,
 				912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */,
 				912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */,
 				912A3B5522DD02E900CE9C00 /* TranslateViewController.swift in Sources */,
+				912A3B8622DF4BA600CE9C00 /* CountryWeather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
