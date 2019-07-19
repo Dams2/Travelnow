@@ -10,6 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+let weatherSettings = WeatherSettings()
+
 class OpenWeatherApi {
     
     let apiKey: String
@@ -27,33 +29,34 @@ class OpenWeatherApi {
         self.genevaLongitude = genevaLongitude
     }
     
-
-    
-    
-    
-    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel) {
-        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&appid=\(apiKey)").responseJSON(completionHandler: {
+    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView) {
+        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&appid=\(apiKey)").responseJSON(completionHandler: {
                 response in
                 if let responseStr = response.result.value {
                     let jsonResponse = JSON(responseStr)
                     let jsonWeather = jsonResponse["weather"].array![0]
                     let jsonTemp = jsonResponse["main"]
                     let iconName = jsonWeather["icon"].stringValue
-                    
+
                     weatherIcon.image = UIImage(named: iconName)
                     temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
+                    weatherSettings.cityLabelUpdate(city: 0)
+                    weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                 }
             })
         } else if country == false {
-            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&appid=\(apiKey)").responseJSON(completionHandler: {
+            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&units=metric&appid=\(apiKey)").responseJSON(completionHandler: {
                     response in
                     if let responseStr = response.result.value {
                         let jsonResponse = JSON(responseStr)
                         let jsonWeather = jsonResponse["weather"].array![0]
                         let jsonTemp = jsonResponse["main"]
-                        let iconName = jsonWeather["icon"].stringValue                        
+                        let iconName = jsonWeather["icon"].stringValue
+
                         weatherIcon.image = UIImage(named: iconName)
                         temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
+                        weatherSettings.cityLabelUpdate(city: 1)
+                        weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                     }
                 })
         }
