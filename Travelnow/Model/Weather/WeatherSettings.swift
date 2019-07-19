@@ -11,7 +11,7 @@ import UIKit
 
 class WeatherSettings: WeatherViewController {
     
-    func cityLabelUpdate(city: Int) {
+    func cityLabelUpdate(city: Int, cityLabel: UILabel) {
         if city == 0 {
             cityLabel.text = "New York"
         } else if city == 1 {

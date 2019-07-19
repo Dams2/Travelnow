@@ -29,7 +29,7 @@ class OpenWeatherApi {
         self.genevaLongitude = genevaLongitude
     }
     
-    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView) {
+    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView, cityLabel: UILabel) {
         if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&appid=\(apiKey)").responseJSON(completionHandler: {
                 response in
                 if let responseStr = response.result.value {
@@ -40,7 +40,7 @@ class OpenWeatherApi {
 
                     weatherIcon.image = UIImage(named: iconName)
                     temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
-                    weatherSettings.cityLabelUpdate(city: 0)
+                    weatherSettings.cityLabelUpdate(city: 0, cityLabel: cityLabel)
                     weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                 }
             })
@@ -55,7 +55,7 @@ class OpenWeatherApi {
 
                         weatherIcon.image = UIImage(named: iconName)
                         temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
-                        weatherSettings.cityLabelUpdate(city: 1)
+                        weatherSettings.cityLabelUpdate(city: 0, cityLabel: cityLabel)
                         weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                     }
                 })
