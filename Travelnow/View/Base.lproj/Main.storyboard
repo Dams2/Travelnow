@@ -157,11 +157,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xBq-7S-Uay">
-                                <rect key="frame" x="87.5" y="20" width="145" height="29"/>
+                                <rect key="frame" x="58" y="20" width="204" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="N3a-Rv-mn9"/>
+                                </constraints>
                                 <segments>
                                     <segment title="New York"/>
                                     <segment title="Genève"/>
                                 </segments>
+                                <color key="tintColor" red="0.091370083389999995" green="0.62815040349999995" blue="0.36353319880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="countrySelection:" destination="D2j-UN-njf" eventType="valueChanged" id="OUf-LC-jnI"/>
                                 </connections>
@@ -172,15 +176,15 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg8-hi-dbl">
                                         <rect key="frame" x="128" y="54" width="64" height="77"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="66"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTB-e7-2Hz">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euY-Tz-Kjg">
-                                                <rect key="frame" x="131.5" y="7" width="57.5" height="25"/>
-                                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lundi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euY-Tz-Kjg">
+                                                <rect key="frame" x="123" y="-2.5" width="74" height="44"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="32"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -192,7 +196,7 @@
                                             <constraint firstItem="euY-Tz-Kjg" firstAttribute="centerY" secondItem="YTB-e7-2Hz" secondAttribute="centerY" id="jNj-eP-i4z"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-UL-0RH">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-UL-0RH">
                                         <rect key="frame" x="113" y="139" width="94" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="94" id="GY2-Ql-Zpr"/>
@@ -205,21 +209,20 @@
                                             <constraint firstAttribute="height" constant="25" id="p4s-d1-2ee"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensoleillé" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-Vm-VKq">
-                                        <rect key="frame" x="123" y="231" width="74.5" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensoleillé" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-Vm-VKq" userLabel="Data Indication">
+                                        <rect key="frame" x="123" y="259" width="74.5" height="25"/>
                                         <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29977768659999998" green="0.55078774689999999" blue="0.96176797150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Cg8-hi-dbl" firstAttribute="centerX" secondItem="cEw-gs-SvX" secondAttribute="centerX" id="Acq-WP-acJ"/>
                                     <constraint firstItem="YTB-e7-2Hz" firstAttribute="top" secondItem="cEw-gs-SvX" secondAttribute="top" id="CUJ-wY-275"/>
-                                    <constraint firstItem="ubf-Vm-VKq" firstAttribute="top" secondItem="gdW-UL-0RH" secondAttribute="bottom" constant="17" id="G6x-TO-E1e"/>
                                     <constraint firstItem="ubf-Vm-VKq" firstAttribute="centerX" secondItem="cEw-gs-SvX" secondAttribute="centerX" id="NgP-sg-iWR"/>
                                     <constraint firstItem="lSM-qa-CJO" firstAttribute="top" secondItem="YTB-e7-2Hz" secondAttribute="bottom" constant="57" id="PUI-2j-xaX"/>
                                     <constraint firstItem="YTB-e7-2Hz" firstAttribute="leading" secondItem="cEw-gs-SvX" secondAttribute="leading" id="Q4n-Vs-pTL"/>
@@ -228,6 +231,7 @@
                                     <constraint firstAttribute="trailing" secondItem="YTB-e7-2Hz" secondAttribute="trailing" id="qJr-MX-qO1"/>
                                     <constraint firstItem="gdW-UL-0RH" firstAttribute="centerX" secondItem="cEw-gs-SvX" secondAttribute="centerX" id="s2w-6h-RYu"/>
                                     <constraint firstItem="lSM-qa-CJO" firstAttribute="leading" secondItem="Cg8-hi-dbl" secondAttribute="trailing" id="u9W-gy-H1g"/>
+                                    <constraint firstItem="ubf-Vm-VKq" firstAttribute="top" secondItem="gdW-UL-0RH" secondAttribute="bottom" constant="45" id="yxu-JC-Y9M"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGv-uW-9Vc">
@@ -238,10 +242,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xBq-7S-Uay" firstAttribute="centerX" secondItem="eKH-Vx-7r7" secondAttribute="centerX" id="D9H-Sj-CDt"/>
                             <constraint firstItem="HGv-uW-9Vc" firstAttribute="centerX" secondItem="eKH-Vx-7r7" secondAttribute="centerX" id="Qfn-id-zZf"/>
                             <constraint firstItem="cEw-gs-SvX" firstAttribute="bottom" secondItem="aRe-DU-3uX" secondAttribute="bottom" id="SFu-yG-iPu"/>
                             <constraint firstItem="HGv-uW-9Vc" firstAttribute="top" secondItem="xBq-7S-Uay" secondAttribute="bottom" constant="23" id="XdE-mu-biR"/>
-                            <constraint firstItem="xBq-7S-Uay" firstAttribute="centerX" secondItem="eKH-Vx-7r7" secondAttribute="centerX" id="ZiI-2B-KRc"/>
                             <constraint firstItem="cEw-gs-SvX" firstAttribute="leading" secondItem="aRe-DU-3uX" secondAttribute="leading" id="gWH-y6-Lio"/>
                             <constraint firstItem="xBq-7S-Uay" firstAttribute="top" secondItem="aRe-DU-3uX" secondAttribute="top" id="kho-p3-WCf"/>
                             <constraint firstItem="cEw-gs-SvX" firstAttribute="top" secondItem="HGv-uW-9Vc" secondAttribute="bottom" constant="8" id="vt2-dC-oCv"/>
@@ -253,10 +257,10 @@
                     <connections>
                         <outlet property="celsiusLabel" destination="lSM-qa-CJO" id="j87-ni-sgc"/>
                         <outlet property="cityLabel" destination="HGv-uW-9Vc" id="HGH-l0-YhA"/>
+                        <outlet property="dataIndication" destination="ubf-Vm-VKq" id="zz2-kj-IUS"/>
                         <outlet property="dayFont" destination="YTB-e7-2Hz" id="TFB-zg-Rru"/>
                         <outlet property="dayLabel" destination="euY-Tz-Kjg" id="AO2-QT-GLN"/>
                         <outlet property="seg" destination="xBq-7S-Uay" id="lmC-Ow-tIF"/>
-                        <outlet property="stateIndication" destination="ubf-Vm-VKq" id="3HJ-fv-Vvr"/>
                         <outlet property="temperatureFont" destination="cEw-gs-SvX" id="sws-W2-gle"/>
                         <outlet property="temperatureLabel" destination="Cg8-hi-dbl" id="MaM-82-Ue1"/>
                         <outlet property="weatherIcon" destination="gdW-UL-0RH" id="4cE-p9-kSv"/>
@@ -287,9 +291,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="01d" width="512" height="512"/>
         <image name="ExchangeIcon" width="30" height="30"/>
         <image name="TranslateIcon" width="30" height="30"/>
         <image name="WeatherIcon" width="30" height="30"/>
-        <image name="sunny" width="512" height="512"/>
     </resources>
 </document>

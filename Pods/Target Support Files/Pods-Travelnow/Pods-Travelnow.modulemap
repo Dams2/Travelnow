@@ -1,0 +1,6 @@
+framework module Pods_Travelnow {
+  umbrella header "Pods-Travelnow-umbrella.h"
+
+  export *
+  module * { export * }
+}

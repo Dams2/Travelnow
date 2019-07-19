@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 
 class CountryWeather: WeatherViewController {
-
-    func segmentedControlUpdate() {
-        
-        if seg.selectedSegmentIndex == 0 {
-        cityLabel.text = "New York"
-        temperatureLabel.text = "28"
-        weatherIcon.image = UIImage(named: "sunny")
-        } else if seg.selectedSegmentIndex == 1 {
-        cityLabel.text = "Genève"
-        temperatureLabel.text = "16"
-        weatherIcon.image = UIImage(named: "moon")
+    
+    /*func segmentedControlUpdate(index: Bool) {
+        if index == true {
+            cityLabel.text = "New York"
+            temperatureLabel.text = "28"
+            weatherIcon.image = UIImage(named: "sunny")
+            stateIndication.text = "Ensoleillé"
+        } else if index == false {
+            cityLabel.text = "Genève"
+            temperatureLabel.text = "16"
+            weatherIcon.image = UIImage(named: "moon")
+            stateIndication.text = "Ciel dégagé"
         }
-    }
+    }*/
+    
 }

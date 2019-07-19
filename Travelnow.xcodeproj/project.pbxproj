@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910C265722E1AAE000B6E1A5 /* OpenWeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C265622E1AAE000B6E1A5 /* OpenWeatherApi.swift */; };
 		912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */; };
 		912A3B4322DD01DA00CE9C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4122DD01DA00CE9C00 /* Main.storyboard */; };
 		912A3B4522DD01DB00CE9C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4422DD01DB00CE9C00 /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5622DD030400CE9C00 /* WeatherViewController.swift */; };
 		912A3B7F22DF1B3500CE9C00 /* FixerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B5922DE109200CE9C00 /* FixerApi.swift */; };
 		912A3B8622DF4BA600CE9C00 /* CountryWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B8522DF4BA600CE9C00 /* CountryWeather.swift */; };
+		DCDC4EF5816862C95B718EC5 /* Pods_Travelnow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B6070CD893465D0131EF9B /* Pods_Travelnow.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53A1479E71D5B8357CE2E93B /* Pods-Travelnow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelnow.release.xcconfig"; path = "Target Support Files/Pods-Travelnow/Pods-Travelnow.release.xcconfig"; sourceTree = "<group>"; };
+		587C2B1E63CDD0A43AF176B9 /* Pods-Travelnow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelnow.debug.xcconfig"; path = "Target Support Files/Pods-Travelnow/Pods-Travelnow.debug.xcconfig"; sourceTree = "<group>"; };
+		910C265622E1AAE000B6E1A5 /* OpenWeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApi.swift; sourceTree = "<group>"; };
 		912A3B3A22DD01DA00CE9C00 /* Travelnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912A3B4222DD01DA00CE9C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		912A3B5622DD030400CE9C00 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		912A3B5922DE109200CE9C00 /* FixerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixerApi.swift; sourceTree = "<group>"; };
 		912A3B8522DF4BA600CE9C00 /* CountryWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryWeather.swift; sourceTree = "<group>"; };
+		E4B6070CD893465D0131EF9B /* Pods_Travelnow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travelnow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDC4EF5816862C95B718EC5 /* Pods_Travelnow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460EAD67862098278338107E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6070CD893465D0131EF9B /* Pods_Travelnow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		912A3B3122DD01DA00CE9C00 = {
 			isa = PBXGroup;
 			children = (
 				912A3B3C22DD01DA00CE9C00 /* Travelnow */,
 				912A3B3B22DD01DA00CE9C00 /* Products */,
+				9740CC273D7FEB158A0DEE24 /* Pods */,
+				460EAD67862098278338107E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				912A3B5922DE109200CE9C00 /* FixerApi.swift */,
+				910C265622E1AAE000B6E1A5 /* OpenWeatherApi.swift */,
 			);
 			path = "Network API";
 			sourceTree = "<group>";
@@ -132,6 +150,15 @@
 			path = Translate;
 			sourceTree = "<group>";
 		};
+		9740CC273D7FEB158A0DEE24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				587C2B1E63CDD0A43AF176B9 /* Pods-Travelnow.debug.xcconfig */,
+				53A1479E71D5B8357CE2E93B /* Pods-Travelnow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 912A3B4C22DD01DB00CE9C00 /* Build configuration list for PBXNativeTarget "Travelnow" */;
 			buildPhases = (
+				813693845C1B980524F3F4CD /* [CP] Check Pods Manifest.lock */,
 				912A3B3622DD01DA00CE9C00 /* Sources */,
 				912A3B3722DD01DA00CE9C00 /* Frameworks */,
 				912A3B3822DD01DA00CE9C00 /* Resources */,
+				414090E41126A5A82AACB872 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,12 +227,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		414090E41126A5A82AACB872 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travelnow/Pods-Travelnow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travelnow/Pods-Travelnow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813693845C1B980524F3F4CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Travelnow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		912A3B3622DD01DA00CE9C00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				912A3B7F22DF1B3500CE9C00 /* FixerApi.swift in Sources */,
+				910C265722E1AAE000B6E1A5 /* OpenWeatherApi.swift in Sources */,
 				912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */,
 				912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */,
 				912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */,
@@ -352,6 +431,7 @@
 		};
 		912A3B4D22DD01DB00CE9C00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587C2B1E63CDD0A43AF176B9 /* Pods-Travelnow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +450,7 @@
 		};
 		912A3B4E22DD01DB00CE9C00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A1479E71D5B8357CE2E93B /* Pods-Travelnow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
