@@ -29,33 +29,39 @@ class OpenWeatherApi {
         self.genevaLongitude = genevaLongitude
     }
     
-    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView, cityLabel: UILabel) {
-        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&appid=\(apiKey)").responseJSON(completionHandler: {
+    func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView, cityLabel: UILabel, dataIndication: UILabel) {
+
+        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&lang=fr&appid=\(apiKey)").responseJSON(completionHandler: {
                 response in
                 if let responseStr = response.result.value {
                     let jsonResponse = JSON(responseStr)
                     let jsonWeather = jsonResponse["weather"].array![0]
                     let jsonTemp = jsonResponse["main"]
                     let iconName = jsonWeather["icon"].stringValue
+                    let description = jsonWeather["description"].stringValue
+                    
 
                     weatherIcon.image = UIImage(named: iconName)
                     temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
-                    weatherSettings.cityLabelUpdate(city: 0, cityLabel: cityLabel)
+                    dataIndication.text = description
+                    weatherSettings.cityLabelUpdate(city: 0, cityLabel: cityLabel, dayLabel: dayLabel)
                     weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                 }
             })
         } else if country == false {
-            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&units=metric&appid=\(apiKey)").responseJSON(completionHandler: {
+            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&units=metric&lang=fr&appid=\(apiKey)").responseJSON(completionHandler: {
                     response in
                     if let responseStr = response.result.value {
                         let jsonResponse = JSON(responseStr)
                         let jsonWeather = jsonResponse["weather"].array![0]
                         let jsonTemp = jsonResponse["main"]
                         let iconName = jsonWeather["icon"].stringValue
+                        let description = jsonWeather["description"].stringValue
 
                         weatherIcon.image = UIImage(named: iconName)
                         temperatureLabel.text = "\(Int(round(jsonTemp["temp"].doubleValue)))"
-                        weatherSettings.cityLabelUpdate(city: 0, cityLabel: cityLabel)
+                        dataIndication.text = description
+                        weatherSettings.cityLabelUpdate(city: 1, cityLabel: cityLabel, dayLabel: dayLabel)
                         weatherSettings.backGroundColor(iconName: iconName, temperatureFont: temperatureFont)
                     }
                 })

@@ -27,17 +27,16 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        openWeatherApi.locationManager(country: true, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel)
+        openWeatherApi.locationManager(country: true, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel, dataIndication: dataIndication)
     }
     
     @IBAction func countrySelection(_ sender: UISegmentedControl) {
         if seg.selectedSegmentIndex == 0 {
-            openWeatherApi.locationManager(country: true, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel)
+            openWeatherApi.locationManager(country: true, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel, dataIndication: dataIndication)
         } else if seg.selectedSegmentIndex == 1 {
-            openWeatherApi.locationManager(country: false, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel)
+            openWeatherApi.locationManager(country: false, weatherIcon: weatherIcon, temperatureLabel: temperatureLabel, dayLabel: dayLabel, temperatureFont: temperatureFont, cityLabel: cityLabel, dataIndication: dataIndication)
         }
     }
-    
 }
     /*
      // MARK: - Navigation
