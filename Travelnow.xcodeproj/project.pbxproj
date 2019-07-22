@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		910C265722E1AAE000B6E1A5 /* OpenWeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C265622E1AAE000B6E1A5 /* OpenWeatherApi.swift */; };
 		910C265922E214F100B6E1A5 /* WeatherSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C265822E214F100B6E1A5 /* WeatherSettings.swift */; };
+		910C265B22E6538700B6E1A5 /* FixerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C265A22E6538700B6E1A5 /* FixerSettings.swift */; };
 		912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */; };
 		912A3B4322DD01DA00CE9C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4122DD01DA00CE9C00 /* Main.storyboard */; };
 		912A3B4522DD01DB00CE9C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912A3B4422DD01DB00CE9C00 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		587C2B1E63CDD0A43AF176B9 /* Pods-Travelnow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelnow.debug.xcconfig"; path = "Target Support Files/Pods-Travelnow/Pods-Travelnow.debug.xcconfig"; sourceTree = "<group>"; };
 		910C265622E1AAE000B6E1A5 /* OpenWeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherApi.swift; sourceTree = "<group>"; };
 		910C265822E214F100B6E1A5 /* WeatherSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSettings.swift; sourceTree = "<group>"; };
+		910C265A22E6538700B6E1A5 /* FixerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixerSettings.swift; sourceTree = "<group>"; };
 		912A3B3A22DD01DA00CE9C00 /* Travelnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912A3B3D22DD01DA00CE9C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912A3B4222DD01DA00CE9C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		912A3B8322DF4B3400CE9C00 /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
+				910C265A22E6538700B6E1A5 /* FixerSettings.swift */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				910C265922E214F100B6E1A5 /* WeatherSettings.swift in Sources */,
 				912A3B3E22DD01DA00CE9C00 /* AppDelegate.swift in Sources */,
 				912A3B5722DD030400CE9C00 /* WeatherViewController.swift in Sources */,
+				910C265B22E6538700B6E1A5 /* FixerSettings.swift in Sources */,
 				912A3B5322DD02D600CE9C00 /* ExchangeViewController.swift in Sources */,
 				912A3B5522DD02E900CE9C00 /* TranslateViewController.swift in Sources */,
 			);

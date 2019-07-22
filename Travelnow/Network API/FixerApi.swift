@@ -7,35 +7,49 @@
 //
 
 import Foundation
-
-struct ExchangeApi: Codable {
-    
-    let success: Bool?
-    let timestamp: Int?
-    let base: String?
-    let date: Int?
-    let rates: [String: Double]?
-}
-
-let urlString = "http://data.fixer.io/api/latest?access_key=e87b7aaf13a4b6950601ce3cde2612d0"
-let url = URL(string: urlString)
+import Alamofire
+import SwiftyJSON
 
 class FixerApi {
     
-    var urlString = "http://data.fixer.io/api/latest?access_key=e87b7aaf13a4b6950601ce3cde2612d0"
+    let fixerApiKey: String
+    let symbols: String
+    let from: String
+    let to: String
+    let amout: UILabel
     
-    let success: String
-    let timestamp: Int
-    let base: String
-    let date: Int
-    let rates: [String: Int]
     
-    init(urlString: String, success: String, timestamp: Int, base: String, date: Int, rates: [String: Int]) {
-        self.urlString = urlString
-        self.success = success
-        self.timestamp = timestamp
-        self.base = base
-        self.date = date
-        self.rates = rates
+    
+    init(fixerApiKey: String, symbols: String, from: String, to: String, amout: UILabel) {
+        self.fixerApiKey = fixerApiKey
+        self.symbols = symbols
+        self.from = from
+        self.to = to
+        self.amout = amout
     }
+    
+//    func fixerdata(textField: UITextField, exchangeRate: UILabel, dollarsResult: UILabel) {
+//        Alamofire.request("http://data.fixer.io/api/latest?access_key=\(fixerApiKey)").responseJSON(completionHandler: {
+//            response in
+//            if let responseStr = response.result.value {
+//                let jsonResponse = JSON(responseStr)
+//                let jsonSuccess = jsonResponse["success"]
+//                let jsonTimestamp = jsonResponse["timestamp"]
+//                let jsonBase = jsonResponse["base"]
+//                let jsonRates = jsonResponse["rates", "USD"]
+//                
+//                if let input = Float(textField.text) {
+//                    let result = Float(jsonRates.doubleValue)
+//                    exchangeRate.text = "Taux de change : \(result)"
+//                    var dollars: Float
+//                    dollars = input / result
+//                    dollarsResult.text! = "\(String(dollars))$"
+//                } else {
+//                    dollarsResult.text! = "0$"
+//                }
+//            }
+//        })
+//    }
+
 }
+

@@ -8,4 +8,5 @@ target 'Travelnow' do
   # Pods for Travelnow
   pod 'Alamofire', '~> 4.8'
   pod 'SwiftyJSON', '~> 4.2'
+  pod 'SwiftGoogleTranslate'
 end

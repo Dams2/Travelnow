@@ -23,7 +23,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var seg: UISegmentedControl!
 
-    let openWeatherApi = OpenWeatherApi(apiKey: "80d738c25791a5d0a10b2293d2cc104e", newYorkLatitude: 40.7306, newYorkLongitude: -73.9867, genevaLatitude: 46.2018, genevaLongitude: 6.1466)
+    let openWeatherApi = OpenWeatherApi(weatherApiKey: "80d738c25791a5d0a10b2293d2cc104e", newYorkLatitude: 40.7306, newYorkLongitude: -73.9867, genevaLatitude: 46.2018, genevaLongitude: 6.1466)
     
     override func viewDidLoad() {
         super.viewDidLoad()

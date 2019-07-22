@@ -14,15 +14,15 @@ let weatherSettings = WeatherSettings()
 
 class OpenWeatherApi {
     
-    let apiKey: String
+    let weatherApiKey: String
     let newYorkLatitude: Double
     let newYorkLongitude: Double
     let genevaLatitude: Double
     let genevaLongitude: Double
    
     
-    init(apiKey: String, newYorkLatitude: Double, newYorkLongitude: Double, genevaLatitude: Double, genevaLongitude: Double) {
-        self.apiKey = apiKey
+    init(weatherApiKey: String, newYorkLatitude: Double, newYorkLongitude: Double, genevaLatitude: Double, genevaLongitude: Double) {
+        self.weatherApiKey = weatherApiKey
         self.newYorkLatitude = newYorkLatitude
         self.newYorkLongitude = newYorkLongitude
         self.genevaLatitude = genevaLatitude
@@ -31,7 +31,7 @@ class OpenWeatherApi {
     
     func locationManager(country: Bool, weatherIcon: UIImageView, temperatureLabel: UILabel, dayLabel: UILabel, temperatureFont: UIView, cityLabel: UILabel, dataIndication: UILabel) {
 
-        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&lang=fr&appid=\(apiKey)").responseJSON(completionHandler: {
+        if country == true { Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(newYorkLatitude)&lon=\(newYorkLongitude)&units=metric&lang=fr&appid=\(weatherApiKey)").responseJSON(completionHandler: {
                 response in
                 if let responseStr = response.result.value {
                     let jsonResponse = JSON(responseStr)
@@ -49,7 +49,7 @@ class OpenWeatherApi {
                 }
             })
         } else if country == false {
-            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&units=metric&lang=fr&appid=\(apiKey)").responseJSON(completionHandler: {
+            Alamofire.request("http://api.openweathermap.org/data/2.5/weather?lat=\(genevaLatitude)&lon=\(genevaLongitude)&units=metric&lang=fr&appid=\(weatherApiKey)").responseJSON(completionHandler: {
                     response in
                     if let responseStr = response.result.value {
                         let jsonResponse = JSON(responseStr)

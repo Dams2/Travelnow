@@ -17,10 +17,8 @@ class TranslateViewController: UIViewController {
     }
     @IBOutlet weak var french: UILabel!
     @IBOutlet weak var frenchInput: UITextView!
-    
     @IBOutlet weak var english: UILabel!
     @IBOutlet weak var englishResult: UITextView!
-    
     @IBAction func translate(_ sender: UIButton) {
     }
     
